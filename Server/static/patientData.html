@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="static/patientData.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="http://code.highcharts.com/stock/highstock.js"></script>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!--<script src="Chart.js"></script>-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+    <title>Patient ID 1</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+
+
+</head>
+<body>
+
+  <br>
+  &emsp;
+  View By: 
+  &nbsp;
+  <button type="submit" onclick="displayData('hour')" class="btn btn-default">Hour</button>
+  <button type="submit" onclick="displayData('day')" class="btn btn-default">Day</button>
+  <button type="submit" onclick="displayData('week')" class="btn btn-default">Week</button>
+  <button type="submit" onclick="displayData('month')" class="btn btn-default">Month</button>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="number" placeholder="Patient ID" id="patientIDField">
+  &emsp;
+  <button type="submit" onclick="changePatientID()" class="btn btn-default">Load</button>
+
+
+  <br><br>
+
+  <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 id = "patientIDHeading" class="panel-title"><center>Patient ID:</center></h3>
+    </div>
+</div>
+
+<div id="wrapper">
+    <div id="barChartBeforeOp"></div>
+    <div id="barChart"></div>
+</div>
+
+<!-- <span id="barChartBeforeOp"></span>
+
+<span id="barChart" style= "clear: right" ></span>
+<div id="barChart" style="min-width: 310px; height: 400px; margin: 0 auto" ></div> -->
+
+<div id="heartRate" style="height: 300px"></div><br>
+
+<div id="stepCount" style="height: 300px"></div>
+
+<!--<div class="tab-pane active" id="test">
+    <canvas id="barChart"></canvas>
+</div> -->
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <table id = "tableTotal" class="table">     
+    </table>
+</div>
+</div>
+
+<div class="panel-heading">
+    <h3 class="panel-title"><center>Location</center></h3>
+</div>
+<div class="container">
+<div id="map" style="width:100%; padding-top: 50%; position: relative;"></div>
+</div>
+<br><br>
+<script>
+function initMap() {
+    var baltimore = {lat: 39.294734, lng: -76.613838};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: baltimore
+  });
+}
+
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8dDWsth8rxWdb-Lr2cn0jWPmXtzBPoHM&callback=initMap">
+</script>
+</body>
+
+<!-- <script src="Chart.js"></script>-->
+
+</html>
+
+
+
+
+
+
+
+
+

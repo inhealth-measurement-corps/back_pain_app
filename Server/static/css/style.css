@@ -1,0 +1,17 @@
+
+#wrapper {
+    width: 400px;
+
+}
+#barChartBeforeOp {
+    width: 800px;
+    height: auto;
+    float: left;
+}
+
+#barChart {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src="scriptIndex.js"></script>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!--<script src="Chart.js"></script>-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+    <title>Patient ID 1</title>
+
+
+  </head>
+  <body>
+  <button type="submit" onclick="displayDay()" class="btn btn-default">20 days</button>
+
+  <p id = "trial"></p>
+
+  <div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 id = "username" class="panel-title"><center><b>Username</b></center></h2><br>
+    <h3 id = "patientID" class="panel-title"><center>Patient ID</center></h3>
+  </div>
+  </div>
+  </script>
+
+
+<canvas id="myBarChart"></canvas>
+<script>
+var ctx = document.getElementById('myBarChart').getContext('2d');
+ctx.canvas.height = 100;
+var myBarChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+        labels: ["Log Time: 16", "Log Time: 17", "Log Time: 18", "Log Time: 19", "Log Time: 20", "Log Time: 21", "Log Time: 22", "Log Time: 23", "Log Time: 24", "Log Time: 25", "Log Time: 26", "Log Time: 27", "Log Time: 28", "Log Time: 29", "Log Time: 30", "Log Time: 31", "Log Time: 32", "Log Time: 33", "Log Time: 34", "Log Time: 35", "Log Time: 36", "Log Time: 37", "Log Time: 38", "Log Time: 39", "Log Time: 40", "Log Time: 41", "Log Time: 42", "Log Time: 43", "Log Time: 44", "Log Time: 45", "Log Time: 46", "Log Time: 47", "Log Time: 48", "Log Time: 49", "Log Time: 50", "Log Time: 51", "Log Time: 52", "Log Time: 53", "Log Time: 54", "Log Time: 55", "Log Time: 56", "Log Time: 56"],
+        datasets: [
+        
+        {
+            type: "bar",
+            label: "Pain Level",
+            yAxisID: "y-axis-1", // left axis
+            backgroundColor: [
+                'rgba(255, 0, 0, 0.6)', //10
+                'rgba(209, 76, 31, 0.6)', //7
+                'rgba(163, 153, 61, 0.6)', //4
+                'rgba(117, 230, 92, 0.6)', //1
+                'rgba(255, 0, 0, 0.6)', //10
+                'rgba(148, 178, 71, 0.6)', //3
+                'rgba(133, 204, 82, 0.6)', //2
+                'rgba(148, 178, 71, 0.6)', //3
+                'rgba(117, 230, 92, 0.6)', //1
+                'rgba(178, 128, 51, 0.6)', //5
+                'rgba(148, 178, 71, 0.6)', //3
+                'rgba(255, 0, 0, 0.6)', //10
+                'rgba(194, 102, 41, 0.6)', //6
+                'rgba(240, 26, 10, 0.6)', //9
+                'rgba(209, 76, 31, 0.6)', //7
+                'rgba(240, 26, 10, 0.6)', //9
+                'rgba(133, 204, 82, 0.6)', //2
+                'rgba(117, 230, 92, 0.6)', //1
+                'rgba(255, 0, 0, 0.6)', //10
+                'rgba(240, 26, 10, 0.6)', //9
+                'rgba(255, 0, 0, 0.6)', //10
+                'rgba(163, 153, 61, 0.6)', //4
+                'rgba(117, 230, 92, 0.6)', //1
+                'rgba(117, 230, 92, 0.6)', //1
+                'rgba(255, 0, 0, 0.6)', //10
+                'rgba(194, 102, 41, 0.6)', //6
+                'rgba(117, 230, 92, 0.6)', //1
+                'rgba(255, 0, 0, 0.6)', //10
+                'rgba(163, 153, 61, 0.6)', //4
+                'rgba(224, 51, 20, 0.6)', //8
+                'rgba(117, 230, 92, 0.6)', //1
+                'rgba(255, 0, 0, 0.6)', //10
+                'rgba(148, 178, 71, 0.6)', //3
+                'rgba(178, 128, 51, 0.6)', //5
+                'rgba(133, 204, 82, 0.6)', //2
+                'rgba(148, 178, 71, 0.6)', //3
+                'rgba(178, 128, 51, 0.6)', //5
+                'rgba(209, 76, 31, 0.6)', //7
+                'rgba(133, 204, 82, 0.6)', //2
+                'rgba(148, 178, 71, 0.6)', //3
+                'rgba(133, 204, 82, 0.6)', //2
+                'rgba(163, 153, 61, 0.6)', //4
+
+                //10: 'rgb(255, 0, 0)'
+                //9: 'rgb(240, 26, 10)'
+                //8: 'rgb(224, 51, 20)'
+                //7: 'rgb(209, 76, 31)'
+                //6: 'rgb(194, 102, 41)'
+                //5: 'rgb(178, 128, 51)'
+                //4: 'rgb(163, 153, 61)'
+                //3: 'rgb(148, 178, 71)'
+                //2: 'rgb(133, 204, 82)'
+                //1: 'rgb(117, 230, 92)',
+            ],
+            data: [10, 7, 4, 1, 10, 3, 2, 3, 1, 5, 3, 10, 6, 9, 7, 9, 2, 1, 10 , 9, 10, 4 , 1, 1, 10, 6, 1, 10, 4, 8, 1, 10, 3, 5, 2, 3, 5, 7, 2, 3, 2, 4]
+        },
+
+        {
+            type: 'line',
+            label: 'Heartbeat',
+            yAxisID: "y-axis-2", // left axis
+            data: [1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 6, 7, 8, 7, 6, 5, 4, 4, 3, 2, 3, 1, 4, 9, 7, 2, 4, 6, 1, 3, 5, 6, 7, 1, 2, 3],
+            backgroundColor: 'rgba(66, 217, 244, 0.0)',
+            borderColor: "rgba(0,0,0,1.5)",
+        }
+    
+    ]}, 
+    options: {
+        scales: {
+            yAxes: [{
+                display: true,
+                position: "right", 
+                yLabel: String,
+                id: "y-axis-1",
+                ticks: {
+                    beginAtZero: true,
+                    steps: 10, 
+                    stepValue: 1,
+                    max: 10
+
+                }
+            }, {
+                position: "left",
+                id: "y-axis-2", 
+                ticks: {
+                    beginAtZero: true,
+                    steps: 10, 
+                    stepValue: 10,
+                    max: 100
+                }
+            }
+
+            ]
+        },
+        legend: {
+            //display: false
+        }
+    },
+});
+
+</script>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <table id = "tableTotal" class="table">
+    <tr>
+        <th>Time Stamp</th> 
+        <th>Pain</th>
+        <th>Percentage</th>
+    <!--<tr>
+    <tr>
+
+        <td>1485833243</td> 
+        <td>4</td>
+        <td>47</td>
+    </tr>
+    <tr>
+
+        <td>1485833368</td> 
+        <td>7</td>
+        <td>62</td>
+    </tr> 
+    <tr>
+
+        <td>1485833778</td> 
+        <td>4</td>
+        <td>62</td>
+    </tr>
+    <tr>
+
+        <td>1485834442</td> 
+        <td>1</td>
+        <td>42</td>
+    </tr>
+    <tr>
+
+        <td>1485834458</td> 
+        <td>10</td>
+        <td>2</td>
+    </tr>
+    <tr>
+
+        <td>1485838190</td> 
+        <td>3</td>
+        <td>97</td>
+    </tr>
+    <tr>
+
+        <td>1485837948</td> 
+        <td>2</td>
+        <td>7</td>
+    </tr>
+    <tr>
+
+        <td>1485838008</td> 
+        <td>3</td>
+        <td>5</td>
+    </tr>
+    <tr>
+
+        <td>1485838392</td> 
+        <td>1</td>
+        <td>6</td>
+    </tr>
+    <tr>
+
+        <td>1485838459</td> 
+        <td>5</td>
+        <td>2</td>
+    </tr>
+    <tr>
+
+        <td>1485838708</td> 
+        <td>3</td>
+        <td>10</td>
+    </tr>
+    <tr>
+
+        <td>1485838831</td> 
+        <td>10</td>
+        <td>7</td>
+    </tr>
+    <tr>
+
+        <td>1485839185</td> 
+        <td>9</td>
+        <td>20</td>
+    </tr>
+    <tr>
+
+        <td>1485839744</td> 
+        <td>9</td>
+        <td>93</td>
+    </tr> 
+    <tr>
+
+        <td>1485839650</td> 
+        <td>7</td>
+        <td>98</td>
+    </tr>
+    <tr>
+
+        <td>1485840081</td> 
+        <td>9</td>
+        <td>68</td>
+    </tr>
+    <tr>
+
+        <td>1485840133</td> 
+        <td>2</td>
+        <td>88</td>
+    </tr>  
+    <tr>
+
+        <td>1485840264</td> 
+        <td>1</td>
+        <td>13</td>
+    </tr>  
+    <tr>
+
+        <td>1485840357</td> 
+        <td>10</td>
+        <td>3</td>
+    </tr>  
+    <tr>
+        <td>35</td>
+        <td>1485841707</td> 
+        <td>9</td>
+        <td>93</td>
+    </tr>  
+    <tr>
+        <td>36</td>
+        <td>1485840837</td> 
+        <td>10</td>
+        <td>98</td>
+    </tr>  
+    <tr>
+        <td>37</td>
+        <td>1485841742</td> 
+        <td>10</td>
+        <td>98</td>
+    </tr>  
+    <tr>
+        <td>38</td>
+        <td>1485842473</td> 
+        <td>1</td>
+        <td>3</td>
+    </tr>  
+    <tr>
+        <td>39</td>
+        <td>1485842507</td> 
+        <td>1</td>
+        <td>3</td>
+    </tr>  
+    <tr>
+        <td>40</td>
+        <td>1485842487</td> 
+        <td>10</td>
+        <td>98</td>
+    </tr>  
+    <tr>
+        <td>41</td>
+        <td>1485842634</td> 
+        <td>6</td>
+        <td>53</td>
+    </tr>  
+    <tr>
+        <td>42</td>
+        <td>1485842790</td> 
+        <td>1</td>
+        <td>3</td>
+    </tr>  
+    <tr>
+        <td>43</td>
+        <td>1485842757</td> 
+        <td>10</td>
+        <td>98</td>
+    </tr>  
+    <tr>
+        <td>44</td>
+        <td>1485842888</td> 
+        <td>4</td>
+        <td>43</td>
+    </tr>  
+    <tr>
+        <td>45</td>
+        <td>1485842961</td> 
+        <td>8</td>
+        <td>68</td>
+    </tr>  
+    <tr>
+        <td>46</td>
+        <td>1485843043</td> 
+        <td>1</td>
+        <td>3</td>
+    </tr>  
+    <tr>
+        <td>47</td>
+        <td>1485843390</td> 
+        <td>10</td>
+        <td>98</td>
+    </tr>  
+    <tr>
+        <td>48</td>
+        <td>1485843360</td> 
+        <td>3</td>
+        <td>28</td>
+    </tr>  
+    <tr>
+        <td>49</td>
+        <td>1485843372</td> 
+        <td>5</td>
+        <td>38</td>
+    </tr>  
+    <tr>
+        <td>50</td>
+        <td>1485873308</td> 
+        <td>2</td>
+        <td>13</td>
+    </tr>  
+    <tr>
+        <td>51</td>
+        <td>1485876059</td> 
+        <td>3</td>
+        <td>33</td>
+    </tr>  
+    <tr>
+        <td>52</td>
+        <td>1485876653</td> 
+        <td>5</td>
+        <td>53</td>
+    </tr>  
+    <tr>
+        <td>53</td>
+        <td>1485881803</td> 
+        <td>7</td>
+        <td>73</td>
+    </tr>  
+    <tr>
+        <td>54</td>
+        <td>1486581690</td> 
+        <td>2</td>
+        <td>18</td>
+    </tr>  
+    <tr>
+        <td>55</td>
+        <td>1486395041</td> 
+        <td>3</td>
+        <td>33</td>
+    </tr>  
+    <tr>
+        <td>56</td>
+        <td>1485882343</td> 
+        <td>2</td>
+        <td>23</td>
+    </tr>  
+    <tr>
+        <td>57</td>
+        <td>1486582680</td> 
+        <td>4</td>
+        <td>38</td>
+    </tr> -->       
+    </table>
+  </div>
+</div>
+
+  <div class="panel-heading">
+    <h3 class="panel-title"><center>Location</center></h3>
+  </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      
+    </script>
+
+    <script>
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8dDWsth8rxWdb-Lr2cn0jWPmXtzBPoHM&callback=initMap">
+    </script>
+  </body>
+
+ <!-- <script src="Chart.js"></script>-->
+
+</html>
+
+
+
+
+
+
+
+
+

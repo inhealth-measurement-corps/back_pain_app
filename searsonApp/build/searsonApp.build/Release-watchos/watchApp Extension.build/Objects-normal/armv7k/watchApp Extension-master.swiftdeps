@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "5070b17df7240fc0f6aa309a6db7b79a"
+build_time: [546979910, 896912000]
+inputs:
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/watchApp Extension/ResponseMessageInterfaceController.swift": [9223372036854775807, 0]
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/watchApp Extension/NotificationController.swift": [9223372036854775807, 0]
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/watchApp Extension/TableInterfaceControlle.swift": [9223372036854775807, 0]
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/watchApp/PercentageInterfaceController.swift": [9223372036854775807, 0]
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/watchApp Extension/BackRowController.swift": [9223372036854775807, 0]
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/watchApp Extension/ExtensionDelegate.swift": [9223372036854775807, 0]
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/watchApp Extension/PercentageRowController.swift": [9223372036854775807, 0]
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/watchApp Extension/ComplicationController.swift": [9223372036854775807, 0]
+  "/Users/matiaseisler/Desktop/Pain Log/searsonApp/PainRowController.swift": [9223372036854775807, 0]

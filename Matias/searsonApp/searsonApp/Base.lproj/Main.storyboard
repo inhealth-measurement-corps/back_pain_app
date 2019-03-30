@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="searsonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIo-tc-ZhR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="55.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pC-Er-uWJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="55.5"/>
+                                        <color key="backgroundColor" red="0.54993023692250986" green="0.95440705128205128" blue="0.67537558409032661" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="Hour">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hourButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7f-kg-hOQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZd-oP-Rdh">
+                                        <rect key="frame" x="94" y="0.0" width="93.5" height="55.5"/>
+                                        <color key="backgroundColor" red="0.35294117650000001" green="0.74117647060000003" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="Day">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xq-4W-r2g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMt-fM-ggj">
+                                        <rect key="frame" x="187.5" y="0.0" width="94" height="55.5"/>
+                                        <color key="backgroundColor" red="0.35294117650000001" green="0.74117647060000003" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="Week">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="weekButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBp-IQ-rTA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86s-be-rbb">
+                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="55.5"/>
+                                        <color key="backgroundColor" red="0.35294117650000001" green="0.74117647060000003" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="Month">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="monthButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O4f-2i-aBO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FMt-fM-ggj" firstAttribute="width" secondItem="UZd-oP-Rdh" secondAttribute="width" id="2yo-20-Gob"/>
+                                    <constraint firstItem="FMt-fM-ggj" firstAttribute="leading" secondItem="UZd-oP-Rdh" secondAttribute="trailing" id="6Gh-AR-O15"/>
+                                    <constraint firstItem="0pC-Er-uWJ" firstAttribute="height" secondItem="kIo-tc-ZhR" secondAttribute="height" id="Kdd-5K-43k"/>
+                                    <constraint firstItem="0pC-Er-uWJ" firstAttribute="centerY" secondItem="kIo-tc-ZhR" secondAttribute="centerY" id="Kyd-Br-xMG"/>
+                                    <constraint firstItem="UZd-oP-Rdh" firstAttribute="leading" secondItem="0pC-Er-uWJ" secondAttribute="trailing" id="OfA-GR-KKo"/>
+                                    <constraint firstItem="0pC-Er-uWJ" firstAttribute="leading" secondItem="kIo-tc-ZhR" secondAttribute="leading" id="Omk-GH-8Uw"/>
+                                    <constraint firstItem="FMt-fM-ggj" firstAttribute="height" secondItem="UZd-oP-Rdh" secondAttribute="height" id="Oqu-7x-UyP"/>
+                                    <constraint firstItem="UZd-oP-Rdh" firstAttribute="width" secondItem="0pC-Er-uWJ" secondAttribute="width" id="P3R-7Z-GXn"/>
+                                    <constraint firstItem="86s-be-rbb" firstAttribute="width" secondItem="FMt-fM-ggj" secondAttribute="width" id="aom-bH-L6x"/>
+                                    <constraint firstItem="FMt-fM-ggj" firstAttribute="centerY" secondItem="UZd-oP-Rdh" secondAttribute="centerY" id="flO-JE-Lga"/>
+                                    <constraint firstItem="86s-be-rbb" firstAttribute="centerY" secondItem="FMt-fM-ggj" secondAttribute="centerY" id="nQa-7L-8Ue"/>
+                                    <constraint firstItem="UZd-oP-Rdh" firstAttribute="height" secondItem="0pC-Er-uWJ" secondAttribute="height" id="sPY-G3-lCL"/>
+                                    <constraint firstItem="86s-be-rbb" firstAttribute="height" secondItem="FMt-fM-ggj" secondAttribute="height" id="uva-Ib-SsU"/>
+                                    <constraint firstItem="86s-be-rbb" firstAttribute="leading" secondItem="FMt-fM-ggj" secondAttribute="trailing" id="xFK-Nd-e8Y"/>
+                                    <constraint firstItem="UZd-oP-Rdh" firstAttribute="centerY" secondItem="0pC-Er-uWJ" secondAttribute="centerY" id="xtB-VV-qAU"/>
+                                    <constraint firstItem="0pC-Er-uWJ" firstAttribute="width" secondItem="kIo-tc-ZhR" secondAttribute="width" multiplier="1/4" id="yMI-KE-Jk5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFe-iE-A4W" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="75.5" width="375" height="296.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Entries" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9W-2h-IQ0">
+                                <rect key="frame" x="9.5" y="382" width="356" height="49.5"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.74117647060000003" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZFe-iE-A4W" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="2UK-CA-dcN"/>
+                            <constraint firstItem="F9W-2h-IQ0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="19/20" id="3mJ-Kh-X5l"/>
+                            <constraint firstItem="ZFe-iE-A4W" firstAttribute="top" secondItem="kIo-tc-ZhR" secondAttribute="bottom" id="DZb-KL-oNe"/>
+                            <constraint firstItem="kIo-tc-ZhR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="INd-28-CzO"/>
+                            <constraint firstItem="F9W-2h-IQ0" firstAttribute="height" secondItem="UZd-oP-Rdh" secondAttribute="height" multiplier="9/10" id="a44-X5-Nbk"/>
+                            <constraint firstItem="kIo-tc-ZhR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/12" id="aNj-cK-NMO"/>
+                            <constraint firstItem="kIo-tc-ZhR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hI0-M1-iFd"/>
+                            <constraint firstItem="F9W-2h-IQ0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.22" id="ied-rY-5Va"/>
+                            <constraint firstItem="ZFe-iE-A4W" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="4/9" id="mJG-ax-SCl"/>
+                            <constraint firstItem="kIo-tc-ZhR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ot4-2r-AHo"/>
+                            <constraint firstItem="F9W-2h-IQ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sra-Va-xbo"/>
+                            <constraint firstItem="ZFe-iE-A4W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uDa-3q-qBt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barChart" destination="ZFe-iE-A4W" id="vdi-xu-5ja"/>
+                        <outlet property="dayButton" destination="UZd-oP-Rdh" id="PPN-PL-BQj"/>
+                        <outlet property="entriesLabel" destination="F9W-2h-IQ0" id="JvD-CE-JR3"/>
+                        <outlet property="hourButton" destination="0pC-Er-uWJ" id="8Qz-rq-6OK"/>
+                        <outlet property="monthButton" destination="86s-be-rbb" id="BZM-f7-CD1"/>
+                        <outlet property="weekButton" destination="FMt-fM-ggj" id="e5v-4i-Du7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-searsonApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-watchApp Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Pods-watchApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>64EFF154CBF3E077C7E71876A151EBBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D7676D0D66B6C58D766B09666A32A12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B0BBF387EF5DDE1D715B3EFE4D41636</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB97A9E415A1C6E822ACB3D8E9B4D095</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

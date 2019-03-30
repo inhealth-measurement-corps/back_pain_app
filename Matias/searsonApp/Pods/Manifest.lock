@@ -1,0 +1,14 @@
+PODS:
+  - Charts (3.0.0):
+    - Charts/Core (= 3.0.0)
+  - Charts/Core (3.0.0)
+
+DEPENDENCIES:
+  - Charts
+
+SPEC CHECKSUMS:
+  Charts: beb341928d2135613b4325a6c6aff9f2f6de895e
+
+PODFILE CHECKSUM: 803b14b06c4b6d32ed7b57fc16cf70bc0afa59ff
+
+COCOAPODS: 1.1.1

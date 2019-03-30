@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_App_4_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="N82-Sa-USq">
+                            <items>
+                                <tableRow identifier="PainRow" id="KZs-15-aPW" customClass="PainRow" customModule="Watch_App_4_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="J6J-Xc-UJV">
+                                        <items>
+                                            <imageView width="40" height="38" alignment="left" verticalAlignment="center" image="(1-2)" id="joo-FE-nSF" userLabel="Pain Image"/>
+                                            <label width="60" alignment="left" verticalAlignment="center" text="Pain Level" minimumScaleFactor="0.5" id="Id7-Ur-aJp">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label width="20" height="20" alignment="center" verticalAlignment="center" text="Pain Level Number" minimumScaleFactor="0.80000000000000004" id="dYV-hy-jb1">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="painImage" destination="joo-FE-nSF" id="G9f-Z6-MnS"/>
+                                        <outlet property="painLevel" destination="Id7-Ur-aJp" id="a8p-xy-qga"/>
+                                        <outlet property="painLevelNumber" destination="dYV-hy-jb1" id="Uwn-7I-F4n"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="N82-Sa-USq" id="bgi-AU-t5G"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="2"/>
+        </scene>
+        <!--showDetails-->
+        <scene sceneID="8Q2-pA-6Pq">
+            <objects>
+                <controller identifier="showDetails" id="qDQ-Y0-zuV" customClass="DetailInterfaceController" customModule="Watch_App_4_WatchKit_Extension">
+                    <items>
+                        <imageView width="75" height="75" alignment="center" image="(1-2) " id="9D4-Hb-3eF"/>
+                        <separator alignment="left" id="Fl0-xl-4pV"/>
+                        <group width="1" alignment="left" id="LT9-yr-gOm">
+                            <items>
+                                <label alignment="left" text="Pain Level Number" id="a76-vJ-YQr"/>
+                                <separator alignment="left" id="1tU-x9-nN7"/>
+                                <imageView width="110" height="10" alignment="left" verticalAlignment="center" image="Green Box 1" contentMode="left" id="PcI-Fv-dG3"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Yes" id="zDJ-eb-6lS">
+                            <connections>
+                                <action selector="button" destination="qDQ-Y0-zuV" id="12b-Lv-ozo"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="box" destination="PcI-Fv-dG3" id="VOn-3x-6Nn"/>
+                        <outlet property="painImage" destination="9D4-Hb-3eF" id="6Y7-Hv-98P"/>
+                        <outlet property="painLevelNumber" destination="a76-vJ-YQr" id="qeB-nS-NcD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="300"/>
+        </scene>
+    </scenes>
+</document>
